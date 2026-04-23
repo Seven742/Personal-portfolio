@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import Profile from "../assets/images/Profile1.png"
-import CV from "../assets/images/CV.png"
+import CV from "../../public/CV.png"
 
 export default function Hero() {
     const [displayText, setDisplayText] = useState("")
@@ -21,7 +21,7 @@ export default function Hero() {
 
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.href = CV;
+        link.href = "/CV.png";
         link.download = "CV.png";
         link.click();
     };

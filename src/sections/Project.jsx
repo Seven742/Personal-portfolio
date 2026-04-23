@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { projects } from "../data/projects"
 import ProjectCard from "../components/ui/ProjectCard"
 
-const categories = ["all", "web", "fullstack"]
+const categories = ["all", "web", "App"]
 
 export default function Project() {
     const [activeCategory, setActiveCategory] = useState("all")
@@ -30,8 +30,8 @@ export default function Project() {
                 {categories.map((category) => (
                     <motion.button
                         key={category}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                        // whileHover={{ scale: 1.05 }}
+                        // whileTap={{ scale: 0.95 }}
                         onClick={() => setActiveCategory(category)}
                         className={`px-6 py-2 rounded-full font-semibold capitalize transition-all duration-300 text-sm ${activeCategory === category
                             ? "bg-blue-600 text-white hover:bg-blue-700"
@@ -56,8 +56,8 @@ export default function Project() {
             {/* Empty State */}
             {filteredProjects.length === 0 && (
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    // initial={{ opacity: 0 }}
+                    // animate={{ opacity: 1 }}
                     className="py-12 text-center"
                 >
                     <p className="text-gray-400 dark:text-gray-400">No projects in this category yet.</p>
