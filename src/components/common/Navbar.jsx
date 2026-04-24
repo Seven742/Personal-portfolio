@@ -8,6 +8,7 @@ export default function Navbar() {
     const navItems = ["home", "about", "projects", "contact"]
     const [scrolled, setScrolled] = useState(false);
 
+
     const menuVariants = {
         hidden: { opacity: 0, y: -20 },
         visible: (i) => ({
@@ -39,7 +40,7 @@ export default function Navbar() {
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
             // className="fixed top-0 z-50 w-full text-gray-900 bg-white   dark:bg-slate-900 dark:text-white backdrop-blur-sm bg-opacity-95"
-            className={`fixed top-0 left-0 w-full  z-50 transition-shadow duration-300 ${scrolled ? "shadow-md bg-white" : ""
+            className={`fixed top-0 left-0 w-full dark:bg-slate-900 z-50 transition-shadow duration-300 ${scrolled ? "shadow-md dark:shadow-md bg-white" : ""
                 }`}
         >
             <div className="flex items-center justify-between px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">

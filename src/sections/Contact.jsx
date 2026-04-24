@@ -5,7 +5,7 @@ import { PiTelegramLogoBold } from "react-icons/pi";
 
 const Contact = () => {
     return (
-        <footer id="contact" className="pt-10 pb-6 text-gray-300 bg-gray-900">
+        <footer id="contact" className="pt-10 pb-6 text-gray-300 bg-gray-900 dark:border-t dark:border-gray-700">
             <div className="grid max-w-6xl grid-cols-1 gap-8 px-4 mx-auto md:grid-cols-3">
                 {/* Brand */}
                 <div>

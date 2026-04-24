@@ -71,13 +71,14 @@ export default function About() {
                     <p className="mb-6 text-lg leading-relaxed text-gray-400">
                         My journey in web development is driven by curiosity and a love for clean code. I believe in continuous learning and staying updated with the latest technologies to deliver the best results.
                     </p>
-                    <motion.button
+                    <motion.a
+                        href="#projects"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="px-8 py-3 font-bold text-white transition bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700"
+                        className="inline-flex items-center justify-center px-8 py-3 font-bold text-white transition bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700"
                     >
                         View My Work
-                    </motion.button>
+                    </motion.a>
                 </motion.div>
 
                 {/* Right - Skills Grid */}
@@ -91,7 +92,7 @@ export default function About() {
                         <motion.div
                             key={index}
                             variants={itemVariants}
-                            whileHover={{ y: -5, boxShadow: "0 10px 30px " }}
+                            whileHover={{ y: -1, boxShadow: "0 5px 6px " }}
                             className="p-6 transition bg-gray-800 border border-gray-700 rounded-lg hover:border-blue-500"
                         >
                             <div className="mb-3 text-xl">

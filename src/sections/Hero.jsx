@@ -32,7 +32,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative flex items-center justify-center w-full min-h-screen px-4 py-12 overflow-hidden bg-white sm:px-6 lg:px-8"
+            className="relative flex items-center justify-center dark:bg-slate-900 w-full min-h-screen px-4 py-12 overflow-hidden bg-white sm:px-6 lg:px-8"
         >
             {/* Decorative Elements */}
             <div className="absolute left-0 bg-yellow-200 rounded-full top-20 w-80 h-80 opacity-15 blur-3xl -z-10"></div>
@@ -50,13 +50,13 @@ export default function Hero() {
                     className="flex flex-col justify-center order-2 md:order-1"
                 >
                     <motion.h1
-                        className="text-5xl font-black leading-tight text-black sm:text-6xl lg:text-7xl"
+                        className="text-5xl font-black leading-tight text-black dark:text-white sm:text-6xl lg:text-7xl"
                     >
                         Hi,<br />
                         I am <span className="text-blue-600">Koem Sean</span>
                     </motion.h1>
 
-                    <p className="max-w-xl mt-6 text-base leading-relaxed text-gray-700 sm:text-lg">
+                    <p className="max-w-xl mt-6 text-base leading-relaxed dark:text-gray-400 text-gray-700 sm:text-lg">
                         Frontend Developer specializing in <span className="font-semibold text-blue-600">React</span> and modern web technologies. I craft beautiful, responsive web experiences with clean code and meticulous attention to detail.
                     </p>
 
@@ -64,7 +64,7 @@ export default function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.3 }}
-                        className="h-10 mt-6 text-lg font-semibold text-gray-900"
+                        className="h-10 mt-6 text-lg dark:text-white font-semibold text-gray-900"
                     >
                         {displayText}
                         <span className="ml-1 text-blue-600 animate-pulse">|</span>
@@ -90,7 +90,7 @@ export default function Hero() {
                             href="#"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="flex items-center justify-center px-8 py-4 font-bold text-black transition-all duration-300 border-2 border-gray-900 rounded-xl hover:bg-gray-900 hover:text-white"
+                            className="flex items-center dark:border-white hover:dark:bg-white hover:dark:text-black dark:text-white justify-center px-8 py-4 font-bold text-black transition-all duration-300 border-2 border-gray-900 rounded-xl hover:bg-gray-900 hover:text-white"
                         >
                             <button onClick={handleDownload}>
                                 Download CV
@@ -113,7 +113,7 @@ export default function Hero() {
                     <motion.div
                         animate={{ scale: [1, 1.05, 1] }}
                         transition={{ duration: 4, repeat: Infinity }}
-                        className="absolute inset-0 bg-yellow-300 rounded-3xl opacity-20 blur-3xl"
+                        className="absolute inset-0 bg-blue-700 rounded-3xl opacity-20 blur-3xl"
                     ></motion.div>
 
                     {/* Profile Image Container */}
@@ -126,7 +126,7 @@ export default function Hero() {
                             // whileHover={{ scale: 1.02 }}
                             src={Profile}
                             alt="Kim Sean - Frontend Developer"
-                            className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] rounded-3xl mt-10"
+                            className="relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[360px] rounded-3xl mt-10"
                         />
                     </motion.div>
 
