@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
-import Profile from "../assets/images/ME.png"
+import Profile from "../assets/images/Me.png"
 import CV from "../../public/CV.png"
 
 export default function Hero() {
